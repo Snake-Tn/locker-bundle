@@ -1,10 +1,17 @@
 {
-    "name": "snake-tn/locker-bundle",
-    "authors": [
-        {
-            "name": "\"Ahmed Kooli",
-            "email": "kooliahmd@gmail.com"
-        }
-    ],
-    "require": {}
+  "name": "snake-tn/locker-bundle",
+  "authors": [
+    {
+      "name": "Ahmed Kooli",
+      "email": "kooliahmd@gmail.com"
+    }
+  ],
+  "require": {
+    "phpunit/phpunit": "^6.3"
+  },
+  "autoload": {
+    "psr-4": {
+      "SnakeTn\\Locker\\": ""
+    }
+  }
 }
