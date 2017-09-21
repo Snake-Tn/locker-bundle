@@ -1,0 +1,5 @@
+app:
+  locker:
+    drivers:
+      debug: ~
+      mysql: ~

@@ -15,9 +15,9 @@ class Locker
 
     public function __call($name, $arguments)
     {
-        $this->driver->lock();
+        $this->driver->lock($name);
         $result = call_user_func_array([$this->subjectObject, $name], $arguments);
-        $this->driver->unlock();
+        $this->driver->unlock($name);
         return $result;
     }
 
